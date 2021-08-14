@@ -1,0 +1,24 @@
+void bubbleSort2(int arr[], size_t size) {
+	bool isSwapped = true;
+	int i = size - 1;
+	while (i > 0)
+	{
+		isSwapped = false;
+		for (int j = 0; j < i; j++)
+		{
+			if (arr[j] < arr[j + 1])
+			{
+				swapAB(arr[j], arr[j + 1]);
+				isSwapped = true;
+			}
+		}
+		if (isSwapped == false)
+		{
+			break;
+		}
+		else
+		{
+			i--;
+		}
+	}
+}
