@@ -1,0 +1,18 @@
+void swapAB(int& a, int& b) {
+	int tmp = a;
+	a = b;
+	b = tmp;
+}
+
+void bubbleSort(int arr[], size_t size) {
+	for (size_t i = size; i >= 1; i--)
+	{
+		for (int j = 0; j < i - 1; j++)
+		{
+			if (arr[j] > arr[j + 1])
+			{
+				swapAB(arr[j], arr[j + 1]);
+			}
+		}
+	}
+}
