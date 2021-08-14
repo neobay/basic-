@@ -3,7 +3,7 @@ void swapAB(int& a, int& b) {
 	a = b;
 	b = tmp;
 }
-
+//
 void bubbleSort2(int arr[], size_t size) {
 	bool isSwapped = true;
 	int i = size - 1;
