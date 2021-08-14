@@ -1,4 +1,5 @@
 // hàm đổi chỗ hai phần tử
+// updated 14/08/21
 void swap(int& a, int& b) {
    int tmp = a;
    a = b;
