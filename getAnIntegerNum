@@ -1,0 +1,11 @@
+int getAnIntegerNumber() {
+    int n;
+    while (true) {
+        cout << "Nhap vao mot so nguyen > 0: ";
+        cin >> n;
+        if (n > 0) {
+            break;
+        }
+    }
+    return n;
+}
