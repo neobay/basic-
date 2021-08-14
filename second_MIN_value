@@ -1,0 +1,19 @@
+void second_min(int arr[], size_t size) {
+	int count = 0, dem =0;
+	for (size_t i = 0; i < size; i++)
+	{
+		if (arr[i] > arr[1])
+		{
+			cout << "Gia tri nho thu hai: " << arr[i] << endl;
+			break;
+		}
+		else
+		{
+			count++;
+		}
+	}
+	if (count == size)
+	{
+		cout << "No";
+	}	
+}
