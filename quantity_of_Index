@@ -1,0 +1,62 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+#define SIZE 255
+
+int countIndex(const char arr[], char x);
+bool isExisted(const char arr[], char x);
+void countArray(const char arr[]);
+
+int main() {
+	char arr[SIZE];
+
+	cout << "Input: ";
+	cin.getline(arr, SIZE);
+
+	countArray(arr);
+		
+	return 0;
+}
+
+int countIndex(const char arr[], char x) {
+	int length = strlen(arr);
+	int count = 0;
+	for (size_t i = 0; i < length; i++)
+	{
+		if (arr[i] == x)
+		{
+			count++;
+		}
+	}
+	return count;
+}
+
+bool isExisted(const char arr[],int n, char x) {
+	
+	for (size_t i = 0; i < n; i++)
+	{
+		if (arr[i] == x)
+		{
+			return true;
+		}
+	}
+	return false;
+}
+
+void countArray(const char arr[]) {
+	int length = strlen(arr);
+	bool isExisted(const char[], int, char);
+	
+	for (size_t i = 0; i < length; i++)
+	{
+		if (!isExisted(arr, i, arr[i]))
+		{
+			int count = countIndex(arr, arr[i]);
+			cout << "'" << arr[i] << "': " << count << endl;
+		}
+			
+	}
+
+}
