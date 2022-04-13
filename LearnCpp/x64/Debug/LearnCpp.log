@@ -1,0 +1,7 @@
+﻿  Address.cpp
+  bai53_2.cpp
+  FullName.cpp
+  Person.cpp
+F:\Cpp_project\LearnCpp\LearnCpp\Person.h(20,8): error C2535: 'Person::Person(std::string)': member function already defined or declared
+F:\Cpp_project\LearnCpp\LearnCpp\Person.h(19): message : see declaration of 'Person::Person'
+  Generating Code...
